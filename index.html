@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/vim-wasm-logo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/vim-wasm-logo-16x16.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Vim</title>
+<script async src="coi-serviceworker.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-PXHK7Q7G3Z");
+</script>
+</head>
+<body>
+  <div id="vim-shell">
+    <div id="vim-status">
+      <img src="./images/vim-wasm-logo-32x32.png" alt="">
+      <span>Vim</span>
+    </div>
+    <div id="vim-editor">
+      <canvas id="vim-screen"></canvas>
+      <input id="vim-input" autocomplete="off" autofocus>
+    </div>
+    <div id="vim-message" hidden></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
